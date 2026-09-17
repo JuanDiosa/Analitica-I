@@ -44,17 +44,6 @@ La base maestra se construye a nivel nacional-diario, usando como llave única d
 
 Demanda, precio de bolsa, volumen de embalses, TRM y el calendario de festivos se unen de forma directa por la fecha exacta. El IPC de energía, al ser mensual, se integra por el periodo año-mes, propagando su valor a cada día del mes correspondiente. El resultado se exporta en formato `.parquet` (tipado y comprimido) y en `.csv` (para inspección rápida).
 
-## Contenido de este repositorio
-
-```
-├── Entrega2_Observatorio_Energia_Colombia.ipynb   # Notebook con el pipeline completo
-├── datos_procesados/
-│   ├── base_maestra_energia_colombia.csv
-│   └── base_maestra_energia_colombia.parquet
-├── datos_crudos/                                  # Extracciones intermedias por fuente
-└── README.md
-```
-
 ## Cómo ejecutar
 
 1. Abrir el notebook en Jupyter o Google Colab.
